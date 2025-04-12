@@ -1,0 +1,7 @@
+C:\Users\nguyen.cao\Desktop\codec++\oop\baiTapTrenLMS\LAB8_TinhKeThuaVaDaKeThua\LAB8_TinhKeThuaVaDaKeThua\obj\Debug\LAB8_TinhKeThuaVaDaKeThua.csproj.AssemblyReference.cache
+C:\Users\nguyen.cao\Desktop\codec++\oop\baiTapTrenLMS\LAB8_TinhKeThuaVaDaKeThua\LAB8_TinhKeThuaVaDaKeThua\obj\Debug\LAB8_TinhKeThuaVaDaKeThua.csproj.CoreCompileInputs.cache
+C:\Users\nguyen.cao\Desktop\codec++\oop\baiTapTrenLMS\LAB8_TinhKeThuaVaDaKeThua\LAB8_TinhKeThuaVaDaKeThua\bin\Debug\LAB8_TinhKeThuaVaDaKeThua.exe.config
+C:\Users\nguyen.cao\Desktop\codec++\oop\baiTapTrenLMS\LAB8_TinhKeThuaVaDaKeThua\LAB8_TinhKeThuaVaDaKeThua\bin\Debug\LAB8_TinhKeThuaVaDaKeThua.exe
+C:\Users\nguyen.cao\Desktop\codec++\oop\baiTapTrenLMS\LAB8_TinhKeThuaVaDaKeThua\LAB8_TinhKeThuaVaDaKeThua\bin\Debug\LAB8_TinhKeThuaVaDaKeThua.pdb
+C:\Users\nguyen.cao\Desktop\codec++\oop\baiTapTrenLMS\LAB8_TinhKeThuaVaDaKeThua\LAB8_TinhKeThuaVaDaKeThua\obj\Debug\LAB8_TinhKeThuaVaDaKeThua.exe
+C:\Users\nguyen.cao\Desktop\codec++\oop\baiTapTrenLMS\LAB8_TinhKeThuaVaDaKeThua\LAB8_TinhKeThuaVaDaKeThua\obj\Debug\LAB8_TinhKeThuaVaDaKeThua.pdb

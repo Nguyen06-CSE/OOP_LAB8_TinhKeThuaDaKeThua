@@ -1,0 +1,20 @@
+Car,Toyota Camry,180,5
+Moto,Honda Wave,80,0
+Car,Ford Mustang,220,4
+Moto,Yamaha Exciter,90,0
+Car,BMW X5,200,7
+Moto,Suzuki Raider,100,0
+Car,Mercedes C-Class,190,5
+Moto,Piaggio Vespa,70,0
+Car,Audi A4,185,5
+Moto,Ducati Monster,240,0
+Car,Hyundai Tucson,170,5
+Moto,Harley Davidson,160,0
+Car,Kia Sorento,160,7
+Moto,BMW R1250 GS,180,0
+Car,Mazda CX-5,175,5
+Moto,Triumph Bonneville,170,0
+Car,Volkswagen Tiguan,165,5
+Moto,Kawasaki Ninja,280,0
+Car,Chevrolet Suburban,150,9
+Moto,Aprilia RSV4,300,0

@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace LAB8_TinhKeThuaVaDaKeThua
 {
-    internal interface IVehicle
+    public interface IVehicle
     {
+         string Ten { get; set; }
+         int TocDo { get; set; }
+
+         void Chay();
+        
+         void Dung();
+        
     }
 }

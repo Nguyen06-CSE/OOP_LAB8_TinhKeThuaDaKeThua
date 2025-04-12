@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LAB8_TinhKeThuaVaDaKeThua
 {
-    internal interface ICar
+    public interface ICar
     {
+        int SoChoNgoi { get; set; }
+
+        void DongCua();
+        void MoCua();
     }
 }

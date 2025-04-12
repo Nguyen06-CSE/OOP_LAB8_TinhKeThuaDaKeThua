@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace LAB8_TinhKeThuaVaDaKeThua
 {
-    internal class Vehicle
+    public class Vehicle : IVehicle
     {
+        public string Ten { get; set; }
+        public int TocDo { get; set; }
+
+        public void Chay()
+        {
+
+        }
+        public void Dung()
+        {
+
+        }
+        public override string ToString()
+        {
+            return $"Ten: {Ten}, TocDo: {TocDo}";
+        }
     }
 }

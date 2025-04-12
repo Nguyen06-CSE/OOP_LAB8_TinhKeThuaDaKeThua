@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace LAB8_TinhKeThuaVaDaKeThua
 {
-    internal class Motorcycle
+    public class Motorcycle : Vehicle, IMotorcycle
     {
+        public void GiamToc()
+        {
+            TocDo -= 5;
+        }
+        public void TangToc()
+        {
+            TocDo += 5;
+        }
+        public override string ToString()
+        {
+            return base.ToString() + " (Motorcycle)";
+        }
     }
 }
