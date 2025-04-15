@@ -943,6 +943,42 @@ namespace LAB8_TinhKeThuaVaDaKeThua
             }
         }
 
+        public void LuuCacSapXepXuongFile(string loai, string truong, bool tangDan, string tenFile)
+        {
+            using (StreamWriter sw = new StreamWriter(tenFile))
+            {
+                sw.WriteLine("=== DANH SÁCH SẮP XẾP TĂNG THEO LOẠI ===");
+                foreach (var s in SortByVehicleType(true)) sw.WriteLine(s);
+
+                sw.WriteLine("\n=== DANH SÁCH SẮP XẾP GIẢM THEO LOẠI ===");
+                foreach (var s in SortByVehicleType(false)) sw.WriteLine(s);
+
+                sw.WriteLine("\n=== DANH SÁCH SẮP XẾP TĂNG THEO TÊN ===");
+                foreach (var s in SortByName(true)) sw.WriteLine(s);
+
+                sw.WriteLine("\n=== DANH SÁCH SẮP XẾP GIẢM THEO TÊN ===");
+                foreach (var s in SortByName(false)) sw.WriteLine(s);
+
+                sw.WriteLine("\n=== DANH SÁCH SẮP XẾP TĂNG THEO TỐC ĐỘ ===");
+                foreach (var s in SortBySpeed(true)) sw.WriteLine(s);
+
+                sw.WriteLine("\n=== DANH SÁCH SẮP XẾP GIẢM THEO TỐC ĐỘ ===");
+                foreach (var s in SortBySpeed(false)) sw.WriteLine(s);
+
+                sw.WriteLine("\n=== DANH SÁCH SẮP XẾP TĂNG THEO SỐ CHỖ NGỒI ===");
+                foreach (var s in SortBySeats(true)) sw.WriteLine(s);
+
+                sw.WriteLine("\n=== DANH SÁCH SẮP XẾP GIẢM THEO SỐ CHỖ NGỒI ===");
+                foreach (var s in SortBySeats(false)) sw.WriteLine(s);
+
+                sw.WriteLine($"\n=== SẮP XẾP THEO TỔNG HỢP: LOẠI = {loai}, TRƯỜNG = {truong}, TĂNG = {tangDan} ===");
+                foreach (var v in SortVehicles(loai, truong, tangDan)) sw.WriteLine(v);
+            }
+
+            Console.WriteLine($" Đã lưu kết quả sắp xếp vào file: {tenFile}");
+        }
+
+
 
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,7 @@ namespace LAB8_TinhKeThuaVaDaKeThua
             XoaTheoTen,
             XoaTheoTocDo,
             XoaLoaiTheoLoaiKetHop,
+            LuuXuongFile,
             Thoat
         }
 
@@ -39,7 +41,8 @@ namespace LAB8_TinhKeThuaVaDaKeThua
 
             while (true)
             {
-                string name, type;
+                bool tangDan;
+                string name, type, condition;
                 int age, location;
                 var list = ds.GetCollection();
                 Console.Clear();
@@ -306,10 +309,10 @@ namespace LAB8_TinhKeThuaVaDaKeThua
                         Console.WriteLine("Loại: car/motorcycle:");
                         loai = Console.ReadLine();
                         Console.WriteLine("Trường (Name/Speed/Seats):");
-                        string truong = Console.ReadLine();
+                        condition = Console.ReadLine();
                         Console.WriteLine("Tăng dần (true/false):");
-                        bool tangDan = bool.Parse(Console.ReadLine());
-                        var kq = ds.SortVehicles(loai, truong, tangDan);
+                        tangDan = bool.Parse(Console.ReadLine());
+                        var kq = ds.SortVehicles(loai, condition, tangDan);
                         foreach (var v in kq) Console.WriteLine(v);
                         break;
 
@@ -375,6 +378,17 @@ namespace LAB8_TinhKeThuaVaDaKeThua
                         ds.RemoveByTypeAndCondition(xLoai, xTruong, xGiaTri);
                         break;
 
+                    case ThucDon.LuuXuongFile:
+
+                        Console.WriteLine("sap xep theo tong hop 3 thuoc tinh: ");
+                        Console.WriteLine("Loại: car/motorcycle:");
+                        loai = Console.ReadLine();
+                        Console.WriteLine("Trường (Name/Speed/Seats):");
+                        condition = Console.ReadLine();
+                        Console.WriteLine("Tăng dần (true/false):");
+                        tangDan = bool.Parse(Console.ReadLine());
+                        ds.LuuCacSapXepXuongFile(loai, condition, tangDan, "C:\\Users\\nguyen.cao\\Desktop\\codec++\\oop\\baiTapTrenLMS\\LAB8_TinhKeThuaVaDaKeThua\\LAB8_TinhKeThuaVaDaKeThua\\bin\\Debug\\output.txt");
+                        break;
                     case ThucDon.Thoat:
                         Console.WriteLine("Thoát chương trình...");
                         break;
@@ -383,10 +397,8 @@ namespace LAB8_TinhKeThuaVaDaKeThua
                         Console.WriteLine("Lựa chọn không hợp lệ.");
                         break;
                 }
-
-
+                Console.ReadKey();
             }
-
         }
-        }
+    }
 }
